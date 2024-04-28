@@ -31,7 +31,7 @@ class Spacing extends PureComponent {
   }
 }
 
-Spacing.propTypes = {
+export const propTypes = {
   top: PropTypes.number,
   bottom: PropTypes.number,
   left: PropTypes.number,
@@ -40,5 +40,7 @@ Spacing.propTypes = {
   horizontal: PropTypes.number,
   children: PropTypes.node,
 };
+
+Spacing.propTypes = propTypes;
 
 export default Spacing;

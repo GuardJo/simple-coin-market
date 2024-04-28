@@ -2,7 +2,7 @@ import InlineList from "../components/InlineList";
 import TestBox from "./TestBox";
 
 export default {
-  title: "InlineList",
+  title: "Common/InlineList",
   component: InlineList,
   argTypes: {},
 };
