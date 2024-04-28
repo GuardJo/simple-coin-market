@@ -29,6 +29,7 @@ export default {
     gray: "#CCCCCC",
     default: "#999999",
     error: "#FF0000",
+    border: "rgba(0, 0, 0, .15)",
   },
 
   // 글꼴 크기
