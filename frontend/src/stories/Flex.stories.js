@@ -1,7 +1,7 @@
 import Flex from "./Flex";
 
 export default {
-  title: "Flex Test",
+  title: "Example/Flex Test",
   component: Flex,
   argTypes: {},
 };

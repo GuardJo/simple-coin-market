@@ -2,7 +2,7 @@ import Spacing from "../components/Spacing";
 import TestBox from "./TestBox";
 
 export default {
-  title: "Spacing",
+  title: "Common/Spacing",
   component: Spacing,
   argTypes: {},
 };

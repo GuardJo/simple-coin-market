@@ -1,7 +1,7 @@
 import Heading from "../components/Heading";
 
 export default {
-  title: "Heading",
+  title: "Common/Heading",
   component: Heading,
   argTypes: {},
 };

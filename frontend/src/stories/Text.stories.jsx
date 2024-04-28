@@ -1,7 +1,7 @@
 import Text from "../components/Text";
 
 export default {
-  title: "Text",
+  title: "Common/Text",
   component: Text,
   argTypes: {},
 };
