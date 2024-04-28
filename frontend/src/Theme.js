@@ -33,6 +33,9 @@ export default {
 
   // 글꼴 크기
   size: {
+    h1: 48,
+    h2: 36,
+    h3: 28,
     xg: 24,
     lg: 18,
     md: 14,
