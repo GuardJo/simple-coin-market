@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+  font-family: "Roboto", "Arial", "Helvetica", "sans-serif";
+  -webkit-font-smmthing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
