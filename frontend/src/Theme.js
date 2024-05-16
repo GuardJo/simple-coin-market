@@ -23,13 +23,17 @@ export const unit = 4;
 export default {
   // 색상
   color: {
-    primary: "#03a9f4", // 주 색상
-    secondary: "#795548", // 부 색상
+    primary: "#2196F3", // 주 색상
+    primaryDark: "#1976D2",
+    secondary: "#009688", // 부 색상
+    secondaryDark: "#00796b",
     white: "#FFFFFF",
-    gray: "#CCCCCC",
-    default: "#999999",
-    error: "#FF0000",
+    gray: "#9e9e9e",
+    grayLight: "#eeeeee",
+    grayDark: "#616161",
     border: "rgba(0, 0, 0, .15)",
+    default: "#333333", // 기본 문자 색상
+    error: "#e51c23", // 오류 색상
   },
 
   // 글꼴 크기
