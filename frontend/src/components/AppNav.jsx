@@ -3,7 +3,7 @@ import Theme, { unit } from "../Theme";
 import Heading from "./Heading";
 import Text from "./Text";
 
-const HEIGHT = 64;
+export const HEIGHT = 64;
 
 class AppNav extends PureComponent {
   render() {
@@ -17,7 +17,7 @@ class AppNav extends PureComponent {
           position: "fixed",
           top: 0,
           left: 0,
-          widows: "100%",
+          width: "100%",
           height: HEIGHT - 4,
           backgroundColor: Theme.color.primary,
         }}
