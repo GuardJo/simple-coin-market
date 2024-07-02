@@ -1,7 +1,7 @@
 import AppNav from "../components/AppNav";
 
 export default {
-  title: "Common/AppNav",
+  title: "Components/AppNav",
   component: AppNav,
   argTypes: {},
 };

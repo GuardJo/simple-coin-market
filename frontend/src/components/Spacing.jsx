@@ -5,11 +5,11 @@ import { ThemeProvider } from "styled-components";
 
 class Spacing extends PureComponent {
   render() {
-    const { top, bottom, left, right, verical, horizontal, children } =
+    const { top, bottom, left, right, vertical, horizontal, children } =
       this.props;
 
-    const computeTop = top ? top : verical;
-    const computeBottom = bottom ? bottom : verical;
+    const computeTop = top ? top : vertical;
+    const computeBottom = bottom ? bottom : vertical;
     const computeLeft = left ? left : horizontal;
     const computeRight = right ? right : horizontal;
 
@@ -36,7 +36,7 @@ export const propTypes = {
   bottom: PropTypes.number,
   left: PropTypes.number,
   right: PropTypes.number,
-  verical: PropTypes.number,
+  vertical: PropTypes.number,
   horizontal: PropTypes.number,
   children: PropTypes.node,
 };
