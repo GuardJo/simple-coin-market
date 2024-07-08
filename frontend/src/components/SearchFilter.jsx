@@ -10,7 +10,7 @@ import Text from "./Text";
 class SearchFilter extends PureComponent {
   render() {
     return (
-      <FormProvider onSubmit={(value) => console.log(value)}>
+      <FormProvider onSubmit={(values) => console.log(values)}>
         <FormProvider.Consumer>
           {({ onChange, values }) => (
             <InlineList spacingBetween={2} verticalAlign="bottom">
@@ -45,7 +45,6 @@ class SearchFilter extends PureComponent {
               </Button>
             </InlineList>
           )}
-          ;
         </FormProvider.Consumer>
       </FormProvider>
     );

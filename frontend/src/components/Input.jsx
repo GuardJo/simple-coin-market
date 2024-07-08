@@ -41,7 +41,13 @@ class Input extends PureComponent {
     } = this.props;
 
     return (
-      <>
+      <fieldset
+        style={{
+          border: 0,
+          padding: 0,
+          position: "relative",
+        }}
+      >
         <label
           htmlFor={`input_${name}`}
           style={{
@@ -92,7 +98,7 @@ class Input extends PureComponent {
             }),
           }}
         />
-      </>
+      </fieldset>
     );
   }
 }

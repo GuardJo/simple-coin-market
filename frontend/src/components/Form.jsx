@@ -63,7 +63,7 @@ class FormProvider extends PureComponent {
   }
 
   render() {
-    const { values, errros, children } = this.state;
+    const { values, errros } = this.state;
 
     return (
       <Provider
@@ -73,8 +73,9 @@ class FormProvider extends PureComponent {
           onChange: this.onChange,
           reset: this.reset,
         }}
+        s
       >
-        <form onSubmit={this.handleSubmit}>{children}</form>
+        <form onSubmit={this.handleSubmit}>{this.props.children}</form>
       </Provider>
     );
   }
