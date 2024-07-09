@@ -41,7 +41,13 @@ class Input extends PureComponent {
     } = this.props;
 
     return (
-      <>
+      <fieldset
+        style={{
+          border: 0,
+          padding: 0,
+          position: "relative",
+        }}
+      >
         <label
           htmlFor={`input_${name}`}
           style={{
@@ -73,6 +79,7 @@ class Input extends PureComponent {
             borderStyle: "solid",
             borderRadius: 4,
             outline: 0,
+            height: "100%",
             ":hover": {
               boxShadow: "0 0 0px 2px rgba(0, 0, 0, 0.3)",
             },
@@ -92,7 +99,7 @@ class Input extends PureComponent {
             }),
           }}
         />
-      </>
+      </fieldset>
     );
   }
 }
