@@ -13,8 +13,8 @@ class SearchFilter extends PureComponent {
       <FormProvider onSubmit={(values) => console.log(values)}>
         <FormProvider.Consumer>
           {({ onChange, values }) => (
-            <InlineList spacingBetween={2} verticalAlign="bottom">
-              <Text xlarge bold>
+            <InlineList spacingBetween={4} verticalAlign="bottom">
+              <Text large bold>
                 검색
               </Text>
               <Select
@@ -22,6 +22,7 @@ class SearchFilter extends PureComponent {
                 name="code"
                 onChange={onChange}
                 value={values["code"]}
+                small
               >
                 <Option label="선택"></Option>
                 <Option label="비트코인(BTX)" value="BTX"></Option>

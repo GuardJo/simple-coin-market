@@ -64,7 +64,7 @@ class Select extends PureComponent {
           htmlFor={`input_${name}`}
           style={{
             display: "block",
-            fontSize: Theme.size.md,
+            fontSize: Theme.size.xs,
             top: 2,
             left: unit * 2,
             cursor: "pointer",
@@ -112,6 +112,7 @@ class Select extends PureComponent {
               border: 0,
               outline: 0,
               width: "100%",
+              height: "100%",
               ...(xsmall && {
                 fontSize: Theme.size.xs,
               }),
