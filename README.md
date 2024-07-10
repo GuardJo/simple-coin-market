@@ -12,3 +12,56 @@
 # 메인화면 mockup
 
 ![](./docs/simple_coin_markter_mockup.png)
+
+# API 명세
+
+## /api/coins `GET`
+
+마켓 내 존재하는 코인 목록 반환
+
+## /api/coins/transactions `GET`
+
+### params
+
+- code : 코인 코드
+- min : 최소 거래가
+- max : 최대 거래가
+
+## API 요청 흐름
+
+### 코인 목록 조회 요청
+
+```mermaid
+sequenceDiagram
+
+Actor user
+participant browser
+participant server
+participant DB
+
+user ->> browser : 웹페이지 접근
+browser ->> server : GET : /api/coins
+server ->> DB : 코인 목록 조회
+DB ->> server : 코인 목록 반환
+server ->> browser : 가공된 코인 목록 반환
+browser ->> user : coin 카드 목록 렌더링
+browser ->> user : 코인 검색 종류 렌더링
+```
+
+### 거래 현황 검색 결과 요청
+
+```mermaid
+sequenceDiagram
+
+Actor user
+participant browser
+participant server
+participant DB
+
+user ->> browser : 특정 코인 거래 현황 검색 요청
+browser ->> server : GET : /api/coins/transactions
+server ->> DB : 거래 현황 데이터 조회 요청
+DB ->> server : 거래 현황 데이터 반환
+server ->> browser : 해당 코인의 거래 현황 데이터 반환
+browser ->> user : 거래 현황 테이블 렌더링
+```
