@@ -9,6 +9,30 @@
     - 최신순으로 출력된다.
 - 코인 거래 이력을 검색할 수 있다.
 
+# 서버 환경
+
+## frontend
+
+- node v20.12.2
+- yarn 1.22.9
+- React 18.2.0
+- styled-components 6.1.8
+- storybook 8.0.9
+
+## backend
+
+- java 17
+- gradle
+- spring-boot 3.2.7
+    - configuration-processor
+    - devtools
+    - web
+    - test
+    - docker-compose
+- postgresql, spring-data-jpa
+- testcontainer
+- lombok
+
 # 메인화면 mockup
 
 ![](./docs/simple_coin_markter_mockup.png)
