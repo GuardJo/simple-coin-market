@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: coin-api-server
+server:
+  port: 8080
