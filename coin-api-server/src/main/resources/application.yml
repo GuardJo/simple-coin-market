@@ -1,5 +1,14 @@
 spring:
   application:
     name: coin-api-server
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/coindb"
+    username: "manager"
+    password: "manager0"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
 server:
   port: 8080

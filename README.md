@@ -89,3 +89,18 @@ DB ->> server : 거래 현황 데이터 반환
 server ->> browser : 해당 코인의 거래 현황 데이터 반환
 browser ->> user : 거래 현황 테이블 렌더링
 ```
+
+# ERD
+
+```mermaid
+erDiagram
+virtual_coin {
+    id bigint pk "식별키"
+    code varchar(10) uk "식별코드"
+    coin_name varchar(20) "코인명"
+    total_price bigint "시가총액"
+    current_price bigint "현재거래액"
+    create_time datetime "생성일자"
+    update_time datetime "갱신일자"
+}
+```
