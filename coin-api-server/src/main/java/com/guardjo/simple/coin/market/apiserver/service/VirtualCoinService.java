@@ -21,8 +21,13 @@ public class VirtualCoinService {
 	 * @return 가상코인 목록
 	 */
 	public List<VirtualCoin> findAllCoins() {
-		return virtualCoinRepository.findAll().stream()
+		log.debug("FindAll VirtualCoins");
+		List<VirtualCoin> virtualCoins = virtualCoinRepository.findAll().stream()
 			.map(VirtualCoin::fromEntity)
 			.toList();
+
+		log.info("Found VirtualCoins, total = {}", virtualCoins.size());
+		
+		return virtualCoins;
 	}
 }
